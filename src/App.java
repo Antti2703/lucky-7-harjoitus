@@ -7,7 +7,7 @@ public class App {
         int n1;
         int n2;
         int n3;
-        //Kokeillaan
+        //Kokeillaan    
 
             System.out.println("Arvotaan numerot");
             n1 = r.nextInt(10)+1;
