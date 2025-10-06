@@ -15,16 +15,16 @@ public class App {
             while (raha > 0)
             {
                 System.out.println ("Rahaa on " +raha +"€ ");
-                System.out.println("Paina Enter, jos haluat pelata kierroksen");
-                // sc.nextLine();
-                raha--;
+                System.out.println("Paina Enter, jos haluat pelata kierroksen tai e jos et halua pelata");
+                // raha--;
                 String vastaus= sc.nextLine();
                 if (vastaus.equalsIgnoreCase("e"))
                 {
                     System.out.println("Peli loppui Rahasi " + raha+ "€ ");
+                    System.out.println("Kiitos pelaamisesta!");
                     break;
                 }
-
+            raha--;
             n1 = r.nextInt(10)+1;
             n2 = r.nextInt(10)+1;
             n3 = r.nextInt(10)+1;
