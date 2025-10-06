@@ -14,10 +14,16 @@ public class App {
 
             while (raha > 0)
             {
-                System.out.println ("Rahaa on " +raha +"€");
+                System.out.println ("Rahaa on " +raha +"€ ");
                 System.out.println("Paina Enter, jos haluat pelata kierroksen");
-                sc.nextLine();
+                // sc.nextLine();
                 raha--;
+                String vastaus= sc.nextLine();
+                if (vastaus.equalsIgnoreCase("e"))
+                {
+                    System.out.println("Peli loppui Rahasi " + raha+ "€ ");
+                    break;
+                }
 
             n1 = r.nextInt(10)+1;
             n2 = r.nextInt(10)+1;
@@ -34,8 +40,7 @@ public class App {
             if (n1!=7 && n2!=7 && n3!=7) {
                 System.out.println("Hävisit pelin");
             }
-            }
-                System.out.println("Rahat menivät suden suuhun!");
+            } 
             }
             }
     
