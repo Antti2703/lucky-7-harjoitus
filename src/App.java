@@ -16,7 +16,6 @@ public class App {
             {
                 System.out.println ("Rahaa on " +raha +"€ ");
                 System.out.println("Paina Enter, jos haluat pelata kierroksen tai e jos et halua pelata");
-                // raha--;
                 String vastaus= sc.nextLine();
                 if (vastaus.equalsIgnoreCase("e"))
                 {
